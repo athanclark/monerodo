@@ -16,34 +16,34 @@ echo "that this Monerodo OS was made to do!!!"
 
 while true
 do
-        echo "================="
-        echo "Recommended First Run Stuff"
-        echo "================="
-	echo "[0] Activate Monero Core!"
-	echo "This will turn on the Monero daemon and start getting you synchronized with the network"
-	echo "This must be done first and can take a while"
-        echo "[1] Setup pool wallet"
-	echo "This is required to run the pool server."
-	echo "[w] Setup a new wallet"
-	echo "Do you need to setup a new wallet for mining rewards? If you need it, create a new wallet first before #2"
-        echo "[2] Enter your mining address"
-        echo "Any mining that your monerodo will do will use this address"
-        echo "[3] Configure the MiniNodo Wallet Web Server"
-        echo "This creates a web and smartphone-app accessible wallet instance "
-        echo "[r] Return to Main Menu"
-        echo -e "\n"
-        echo "You can type 'back' in some text entry to return to the previous menu"
-        echo -e "Enter your selection \c"
-        read answer
-        case "$answer" in
-		0) ./xmr_settings.sh;;
-                1) ./setup_pool_wallet.sh;;
-                2) ./monero_mine_address.sh;;
-                3) ./setup_mininodo_wallet.sh;;
-		w) ./monero_monero-wallet-cli.sh;;
-                r) exit ;;
-        esac
-        clear
+    echo "================="
+    echo "Recommended First Run Stuff"
+    echo "================="
+    echo "[0] Activate Monero Core!"
+    echo "This will turn on the Monero daemon and start getting you synchronized with the network"
+    echo "This must be done first and can take a while"
+    echo "[1] Setup pool wallet"
+    echo "This is required to run the pool server."
+    echo "[w] Setup a new wallet"
+    echo "Do you need to setup a new wallet for mining rewards? If you need it, create a new wallet first before #2"
+    echo "[2] Enter your mining address"
+    echo "Any mining that your monerodo will do will use this address"
+    echo "[3] Configure the MiniNodo Wallet Web Server"
+    echo "This creates a web and smartphone-app accessible wallet instance "
+    echo "[r] Return to Main Menu"
+    echo -e "\n"
+    echo "You can type 'back' in some text entry to return to the previous menu"
+    echo -e "Enter your selection \c"
+    read answer
+    case "$answer" in
+        0) ./xmr_settings.sh;;
+        1) ./setup_pool_wallet.sh;;
+        2) ./monero_mine_address.sh;;
+        3) ./setup_mininodo_wallet.sh;;
+        w) ./monero_monero-wallet-cli.sh;;
+        r) exit ;;
+    esac
+    clear
 done
 
 
